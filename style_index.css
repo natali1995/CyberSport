@@ -1,0 +1,808 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Style_grid for Home page*/
+/*Style_grid for slider-1*/
+.slider-1 {
+  display: grid;
+  grid-template-rows: 300px 570px 50px;
+  grid-template-columns: 100%;
+  height: 985px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 25% 60%;
+  grid-template-rows: 300px;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 27.6657060519% 11.8155619597% 37.4639769452% 25.9365994236%;
+  grid-template-rows: 30.534351145% 39.6% 24.8091603053%;
+}
+
+#logo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.logo-h2 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.menu {
+  display: inline-grid;
+  grid-template-columns: 11.5044247788% 11.5044247788% 13.9064475348% 23.0088495575% 13.1479140329% 5.4361567636%;
+  grid-column-gap: 7.585335019%;
+  padding-left: 25.2844500632%;
+  padding-top: 15%;
+}
+
+.search {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 51.7361111111% 8.4027777778% 22.2916666667% 12.1527777778%;
+  grid-template-rows: 10.7421875% 6.54296875% 7.421875% 9.08203125% 6.8359375%;
+  grid-row-gap: 1.5vh;
+}
+
+.title-h2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: end;
+}
+
+.title-h1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
+}
+
+.link-sign-in {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: end;
+}
+
+.button-sign_in {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  justify-self: end;
+}
+
+.pagination {
+  justify-self: center;
+}
+
+.circle {
+  margin-left: 7px;
+}
+
+/*Style-grid for section about us*/
+.about_us {
+  display: grid;
+  grid-template-columns: 48.4726688103% 51.9292604502%;
+  grid-template-rows: 8.49609375% 78.90625%;
+  grid-column-gap: 2%;
+  grid-row-gap: 15.13671875%;
+  margin-top: 7.8125%;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+  height: 770px;
+}
+
+.heading-about {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+.description-about_us {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  width: 80%;
+}
+
+/*Grid for section our services*/
+.our_services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4.0136635354% 30.657557643% 30.657557643%;
+  grid-column-gap: 8.125%;
+  grid-row-gap: 10.0768573868%;
+  margin-top: 5.1238257899%;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+  height: 1050px;
+}
+
+.heading-services {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.service {
+  display: grid;
+  grid-template-areas: "heading heading icon" "description description description";
+  grid-template-rows: 19.4986072423% 68.5236768802%;
+  grid-template-columns: 34.446397188% 33.0404217926% 13.7082601054%;
+  grid-row-gap: 11.9777158774%;
+  grid-column-gap: 9.841827768%;
+}
+
+.service-h3 {
+  grid-area: heading;
+  justify-self: end;
+  align-self: center;
+}
+
+.fa-twitch, .fa-cog, .fa-gamepad, .fa-wifi {
+  grid-area: icon;
+  justify-self: start;
+  margin-right: 30px;
+}
+
+.service-p {
+  grid-area: description;
+}
+
+/*Style for section trending-product*/
+.trending_products {
+  display: grid;
+  grid-template-areas: "heading-products heading-products heading-products" "product-1 product-2 product-3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 160px 480px;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+  height: 750px;
+}
+
+.heading-product {
+  grid-area: heading-products;
+  justify-self: center;
+}
+
+.link-trending-1 {
+  grid-area: product-1;
+  justify-self: center;
+}
+
+.link-trending-2 {
+  grid-area: product-2;
+  justify-self: center;
+}
+
+.link-trending-3 {
+  grid-area: product-3;
+  justify-self: center;
+}
+
+/*Style for section slider-footer*/
+.slider_footer {
+  display: grid;
+  grid-template-areas: "button button button";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  height: 850px;
+}
+
+.button-footer {
+  grid-area: button;
+  justify-self: center;
+  margin-top: 700px;
+}
+
+/*Style for section footer*/
+.footer {
+  display: grid;
+  grid-template-areas: "address social" "footer-down footer-down";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 40px;
+  grid-row-gap: 50px;
+  height: 400px;
+  margin-right: 6.8055555556%;
+  margin-left: 6.8055555556%;
+  margin-top: 70px;
+}
+
+.information {
+  grid-area: address;
+  margin-left: 6.875%;
+}
+
+.information-p, .information-h5 {
+  margin-top: 15px;
+}
+
+.information-call {
+  grid-area: social;
+  display: grid;
+  grid-template-areas: "call" "icons";
+  grid-template-rows: 60px 90px;
+  justify-self: end;
+  grid-row-gap: 40px;
+  margin-top: 60px;
+}
+
+.call {
+  grid-area: call;
+  display: grid;
+  grid-template-areas: "icon-call heading-call";
+  grid-template-columns: 15% 80%;
+  grid-column-gap: 30px;
+}
+
+.fa-phone-volume {
+  grid-area: icon-call;
+}
+
+.call-h5 {
+  grid-area: heading-call;
+  align-self: center;
+}
+
+.social {
+  grid-area: icons;
+  display: grid;
+  grid-template-areas: "heading-icons heading-icons heading-icons heading-icons heading-icons" "you-tube twitter facebook vk telegram";
+  grid-template-columns: 31.3333333333% 26.6666666667% 26.6666666667% 30.6666666667%;
+  grid-template-rows: 30px 40px;
+  grid-row-gap: 20px;
+  justify-self: end;
+  margin-right: 20%;
+}
+
+.social-h5 {
+  grid-area: heading-icons;
+  justify-self: end;
+}
+
+.fa-youtube {
+  grid-area: you-tube;
+}
+
+.fa-twitter-square {
+  grid-area: twitter;
+}
+
+.fa-facebook-square {
+  grid-area: facebook;
+}
+
+.fa-vk {
+  grid-area: vk;
+}
+
+.fa-telegram {
+  grid-area: telegram;
+}
+
+.footer-down {
+  grid-area: footer-down;
+}
+
+/* Style for News page */
+.menu-header {
+  height: 300px;
+}
+
+.body-news {
+  display: grid;
+  grid-template-areas: "heading-body" "new-aticle1" "new-videos" "new-aticle2" "upload" "picture-footer";
+  grid-template-rows: 95px 770px 598px 770px 164px 628px;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+  margin-top: 80px;
+  height: 3025px;
+}
+
+.news-heading {
+  grid-area: heading-body;
+  justify-self: center;
+}
+
+.news-1 {
+  grid-area: new-aticle1;
+  display: grid;
+  grid-template-areas: "picture1-news" "news-description-picture1";
+  grid-template-rows: 515px 120px;
+  grid-row-gap: 28px;
+}
+
+.new-picture-1 {
+  grid-area: picture1-news;
+  justify-self: center;
+}
+
+.description-news-1 {
+  grid-area: news-description-picture1;
+  justify-self: center;
+  width: 70%;
+  text-align: center;
+}
+
+.news-2-3 {
+  grid-area: new-videos;
+  display: grid;
+  grid-template-areas: "block-video1 block-video2" "block-description-vodeo1 block-description-video2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 186px 38px;
+  grid-row-gap: 25px;
+  grid-column-gap: 40px;
+}
+
+.news-video-2 {
+  grid-area: block-video1;
+  justify-self: start;
+  width: 95%;
+}
+
+.description-news-2 {
+  grid-area: block-description-vodeo1;
+  justify-self: center;
+  text-align: center;
+  width: 95%;
+}
+
+.news-video-3 {
+  grid-area: block-video2;
+  justify-self: end;
+  width: 95%;
+}
+
+.description-news-3 {
+  grid-area: block-description-video2;
+  justify-self: center;
+  text-align: center;
+  width: 95%;
+}
+
+.news-4 {
+  grid-area: new-aticle2;
+  display: grid;
+  grid-template-areas: "picture2-news" "news-description-picture2";
+  grid-template-rows: 515px 120px;
+  grid-row-gap: 28px;
+}
+
+.new-picture-4 {
+  grid-area: picture2-news;
+  justify-self: center;
+}
+
+.description-news-4 {
+  grid-area: news-description-picture2;
+  justify-self: center;
+  text-align: center;
+  width: 70%;
+}
+
+.fa-sync-alt {
+  grid-area: upload;
+  justify-self: center;
+}
+
+#picture-footer-news {
+  grid-area: picture-footer;
+  justify-self: center;
+  margin-top: 40px;
+}
+
+/* Style_grid for page Games */
+.body-games {
+  display: grid;
+  grid-template-areas: "heading-body heading-body" "game1 game2" "game3 game4" "game5 game6" "game7 game7" "pagination-pages pagination-pages";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 320px 320px 320px 500px 200px;
+  grid-row-gap: 25px;
+  grid-column-gap: 2%;
+  margin-top: 70px;
+  margin-right: 6.8055555556%;
+  margin-left: 6.8055555556%;
+}
+
+.heading-games {
+  grid-area: heading-body;
+  justify-self: center;
+}
+
+.game1 {
+  grid-area: game1;
+  justify-self: end;
+}
+
+.game2 {
+  grid-area: game2;
+}
+
+.game3 {
+  grid-area: game3;
+  justify-self: end;
+}
+
+.game4 {
+  grid-area: game4;
+}
+
+.game5 {
+  grid-area: game5;
+  justify-self: end;
+}
+
+.game6 {
+  grid-area: game6;
+}
+
+.game7 {
+  grid-area: game7;
+  justify-self: center;
+}
+
+.numeral-pagination {
+  grid-area: pagination-pages;
+  justify-self: center;
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20%;
+}
+
+/* Style for description game page */
+.description-game {
+  display: grid;
+  grid-template-areas: "description-heading" "description-body" "other-pictures-game";
+  grid-template-rows: 100px 750px 400px;
+  margin-top: 70px;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+}
+
+.heading-descriptions {
+  grid-area: description-heading;
+  display: grid;
+  grid-template-areas: "arrow heaging-warcraft-game button-join";
+  grid-template-columns: 5% 82% 13%;
+}
+
+.arrow-back {
+  grid-area: arrow;
+}
+
+.heading-description-game {
+  grid-area: heaging-warcraft-game;
+  justify-self: center;
+}
+
+.link-join-us {
+  grid-area: button-join;
+}
+
+.body-description {
+  grid-area: description-body;
+  display: grid;
+  grid-template-areas: "picture-warcraft description-warcraft";
+  grid-template-columns: 55% 42%;
+  grid-column-gap: 5%;
+  margin-top: 50px;
+}
+
+.warcraft-1 {
+  grid-area: picture-warcraft;
+  justify-self: end;
+}
+
+.description-game-warcraft {
+  grid-area: description-warcraft;
+}
+
+.other-picture-game {
+  grid-area: other-pictures-game;
+  display: grid;
+  grid-template-areas: "warcraft2 warcraft3 warcraft4";
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  grid-column-gap: 3%;
+}
+
+.warcraft-2 {
+  grid-area: warcraft2;
+  justify-self: center;
+}
+
+.warcraft-3 {
+  grid-area: warcraft3;
+  justify-self: center;
+}
+
+.warcraft-4 {
+  grid-area: warcraft4;
+  justify-self: center;
+}
+
+.video-warcraft {
+  display: grid;
+  grid-template-areas: "heading-video-warcraft heading-video-warcraft" "video-warcraft-1 video-warcraft-2" "video-warcraft-3 video-warcraft-4" "button-go-tour button-go-tour";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 130px 380px 450px 150px;
+  margin-right: 12.3611111111%;
+  margin-left: 12.3611111111%;
+  margin-top: 40px;
+}
+
+.heading-video {
+  grid-area: heading-video-warcraft;
+  justify-self: center;
+}
+
+.video-warcraft1 {
+  grid-area: video-warcraft-1;
+  justify-self: center;
+}
+
+.video-warcraft2 {
+  grid-area: video-warcraft-2;
+  justify-self: center;
+}
+
+.video-warcraft3 {
+  grid-area: video-warcraft-3;
+  justify-self: center;
+}
+
+.video-warcraft4 {
+  grid-area: video-warcraft-4;
+  justify-self: center;
+}
+
+.link-go-to-the-tour {
+  grid-area: button-go-tour;
+  justify-self: center;
+}
+
+/* Style for Contacts page */
+.contacts-body {
+  display: grid;
+  grid-template-areas: "heading-contacts" "information-contacts" "map";
+  grid-template-rows: 150px 1200px 550px;
+  margin-top: 70px;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+}
+
+.heading-contacts {
+  grid-area: heading-contacts;
+  justify-self: center;
+}
+
+.information-contacts {
+  grid-area: information-contacts;
+  display: grid;
+  grid-template-areas: "picture-contacts field-for-you" "password-and-nick password-and-nick";
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 700px 400px;
+}
+
+.contact-picture {
+  grid-area: picture-contacts;
+  justify-self: end;
+}
+
+.field-for-you {
+  grid-area: field-for-you;
+  justify-self: end;
+  display: grid;
+  grid-template-areas: "heading-f-name" "input-f-name" "heading-s-name" "input-s-name" "heding-phone" "input-phone" "heading-e-mail" "input-e-mail";
+  grid-template-rows: 55px 85px 55px 85px 55px 85px 55px 85px;
+}
+
+.heading-first-name, .heading-second-name, .heading-phone, .heading-email {
+  justify-self: end;
+}
+
+.password-and-nick {
+  grid-area: password-and-nick;
+  justify-self: center;
+  display: grid;
+  grid-template-areas: "heading-nick" "input-nick" "heading-password" "input-password" "button-send";
+  grid-template-rows: 55px 85px 55px 100px 100px;
+}
+
+.heading-nickname, .heading-password, .link-send {
+  justify-self: center;
+}
+
+.map {
+  grid-area: map;
+  justify-self: center;
+}
+
+/* Style for Blogs Page */
+.blog-body {
+  display: grid;
+  grid-template-areas: "heading-blogs-body heading-blogs-body heading-blogs-body" "blog1 blog2 blog3" "blog4 blog5 blog6" "blog7 blog8 blog9" "blog10 blog11 blog12" "button-upload button-upload button-upload";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 730px 730px 730px 830px 150px;
+  grid-column-gap: 5%;
+  margin-top: 70px;
+  margin-left: 6.8055555556%;
+  margin-right: 6.8055555556%;
+}
+
+.heading-blogs {
+  grid-area: heading-blogs-body;
+  justify-self: center;
+}
+
+.link-blog1 {
+  grid-area: blog1;
+}
+
+.link-blog2 {
+  grid-area: blog2;
+}
+
+.link-blog3 {
+  grid-area: blog3;
+}
+
+.link-blog4 {
+  grid-area: blog4;
+}
+
+.link-blog5 {
+  grid-area: blog5;
+}
+
+.link-blog6 {
+  grid-area: blog6;
+}
+
+.link-blog7 {
+  grid-area: blog7;
+}
+
+.link-blog8 {
+  grid-area: blog8;
+}
+
+.link-blog9 {
+  grid-area: blog9;
+}
+
+.link-blog10 {
+  grid-area: blog10;
+}
+
+.link-blog11 {
+  grid-area: blog11;
+}
+
+.link-blog12 {
+  grid-area: blog12;
+}
+
+.button-upload {
+  grid-area: button-upload;
+  display: grid;
+  grid-template-areas: "text-upload icon-upload";
+  grid-template-columns: 60% 40%;
+  grid-column-gap: 5%;
+}
+
+.button-upload-h2 {
+  grid-area: text-upload;
+  justify-self: end;
+}
+
+.fa-sync {
+  grid-area: icon-upload;
+}
+
+.common-blog {
+  display: grid;
+  grid-template-areas: "picture-blog picture-blog picture-blog" "data icon-calendar icon-calendar" "description-blog icon-message icon-download";
+  grid-template-columns: 75% 10% 10%;
+  grid-template-rows: 350px 100px 190px;
+}
+
+.img-blog1 {
+  grid-area: picture-blog;
+  justify-self: center;
+}
+
+.data {
+  grid-area: data;
+  justify-self: start;
+}
+
+.fa-calendar-alt {
+  grid-area: icon-calendar;
+  justify-self: end;
+}
+
+.heading-description-blog {
+  grid-area: description-blog;
+  justify-self: start;
+}
+
+.fa-comment-dots {
+  grid-area: icon-message;
+  align-self: end;
+  justify-self: end;
+}
+
+.fa-download {
+  grid-area: icon-download;
+  align-self: end;
+  justify-self: end;
+}
+
+/* Style for Description Blog Page */
+.body-description-blog {
+  display: grid;
+  grid-template-areas: "heading-blog" "picture-blog" "content-blog";
+  margin-top: 70px;
+  margin-right: 6.8055555556%;
+  margin-left: 6.8055555556%;
+}
+
+.heading-description-blog-body {
+  grid-area: heading-blog;
+  display: grid;
+  grid-template-areas: "arrow-blog heading-heading-blog";
+  grid-template-columns: 10% 80%;
+}
+
+.arrow-blog {
+  grid-area: arrow-blog;
+}
+
+.heading-heading-description-blog {
+  grid-area: heading-heading-blog;
+  text-align: center;
+  justify-self: center;
+}
+
+.picture-description-blog {
+  grid-area: picture-blog;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.description-blog-p {
+  grid-area: content-blog;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=style_index.css.map */

@@ -1,0 +1,368 @@
+@media all and (max-width: 1150px)
+  /*Adaptive2 for Home page*/
+  /*Adaptive2 for slide-1*/
+  .slider-1
+    background-image: url(img/slide-adaptive2.jpg)
+    background-size: cover
+    grid-template-rows: 400px 450px 50px
+    height: 970px
+
+  .logo-h2
+    font-size: 1.9em
+
+  .header
+    display: grid
+    grid-template-columns: 25% 60% 10%
+    grid-template-rows: 100%
+
+  .menu-toggle
+    flex: 0 0 auto
+    width: 50px
+    height: 50px
+    border: 2px solid rgb(255,255,255)
+    cursor: pointer
+    position: relative
+    margin-top: 85px
+    justify-self: end
+
+  .hamburger,.cross
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+  .hamburger span
+    display: block
+    width: 18px
+    height: 2px
+    margin-bottom: 3px
+    overflow: hidden
+    position: relative
+
+  .hamburger span:last-child
+    margin: 0
+
+  .hamburger span:before,.hamburger span:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgb(255,255,255)
+    transform: translateX(-200%)
+    transition: transform ease 300ms
+
+  .hamburger span:after
+    transform: translateX(0)
+
+  .hamburger span:nth-child(2):before,.hamburger span:nth-child(2):after
+    transition-delay: 75ms
+
+  .hamburger span:last-child:before,.hamburger span:last-child:after
+    transition-delay: 150ms
+
+  .menu-toggle:hover .hamburger span:before
+    transform: translateX(0)
+
+  .menu-toggle:hover .hamburger span:after
+    transform: translateX(200%)
+
+  .menu-toggle.active .hamburger span:before
+    transform: translateX(100%)
+
+  .menu-toggle.active .hamburger span:after
+    transform: translateX(200%)
+
+  .cross span
+    display: block
+    width: 18px
+    height: 2px
+    background-color: rgb(255,255,255)
+    transform: translateY(50%) rotate(45deg) scaleX(0)
+    transition: transform ease 200ms
+
+  .cross span:last-child
+    transform: translateY(-50%) rotate(-45deg) scaleX(0)
+
+  .menu-toggle.active .cross span
+    transition-delay: 450ms
+    transform: translateY(50%) rotate(45deg) scaleX(1)
+
+  .menu-toggle.active .cross span:last-child
+    transform: translateY(-50%) rotate(-45deg) scaleX(1)
+
+  .menu
+    display: grid
+    grid-template-rows: 30px 30px 30px 30px 30px 30px
+    grid-template-columns: 100%
+    grid-row-gap: 20px
+    justify-self: center
+    margin-left: 7%
+
+  .search
+    display: none
+
+  .title-h2
+    justify-self: center
+
+  .title-h1
+    justify-self: center
+
+  .link-sign-in
+    justify-self: center
+
+  /*Adaptive2 for section about us*/
+  .about_us
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 10% 48% 40%
+    grid-gap: 1%
+
+  .heading-about
+    grid-row-start: 1
+    grid-row-end: 2
+
+  #about
+    grid-row-start: 2
+    grid-row-end: 3
+    justify-self: center
+
+  .description-about_us
+    grid-row-start: 3
+    grid-row-end: 4
+
+  /*Adaptive2 for section our services*/
+  .our_services
+    margin-top: 80px
+    grid-template-columns: 99%
+    grid-template-rows: 50px 200px 200px 200px 200px
+    grid-row-gap: 40px
+    height: 1100px
+
+  .heading-services
+    grid-row-start: 1
+    grid-row-end: 2
+
+  .service
+    margin-top: 70px
+    grid-column-start: 1
+    grid-column-end: 2
+    height: 200px
+    grid-template-areas: 'heading icon icon' 'description description description'
+
+  .service-h3
+    font-size: 2em
+    justify-self: start
+
+  .service-p
+    font-size: 1.1em
+
+  .fa-twitch, .fa-cog, .fa-gamepad, .fa-wifi
+    font-size: 3em
+    align-self: center
+    justify-self: end
+
+  /*Adaptive for section trending-products*/
+  .trending_products
+    margin-top: 30px
+    grid-template-areas: 'heading-products' 'product-1' 'product-2' 'product-3'
+    grid-template-columns: 100%
+    grid-template-rows: 160px 520px 520px 520px
+    height: 1800px
+
+  .trend-product
+    width: 400px
+    height: 500px
+
+  /*Adaptive2 for section slider-footer*/
+  .slider_footer
+    height: 330px
+
+  .button-footer
+    margin-top: 230px
+
+  /*Adaptive for section footer*/
+  .information-h5, .call-h5, .social-h5, .information-p
+    font-size: 1.3em
+
+
+  /*Adaptive for News page */
+  .menu-header
+    height: 340px
+
+  .new-picture-1, .new-picture-4
+    height: 300px
+
+  .description-news-1, .description-news-4
+    font-size: 1.5em
+
+  .news-video-2
+    width: 80%
+
+  .news-video-3
+    width: 80%
+
+  #picture-footer-news
+    width: 100%
+    height: 120%
+
+  .body-news
+    grid-template-rows: 95px 480px 1100px 520px 100px 250px
+    height: 2600px
+
+  .news-1
+    grid-template-rows: 300px 120px
+
+  .news-4
+    grid-template-rows: 300px 120px
+
+  .news-2-3
+    display: grid
+    grid-template-areas: 'block-video1' 'block-video2'
+    grid-template-columns: 100%
+    grid-template-rows: 508px 508px
+    grid-row-gap: 25px
+
+  .news-2
+    grid-area: block-video1
+    display: grid
+    grid-template-areas: 'block1-video' 'block1-description'
+
+  .news-video-2
+    grid-area: block1-video
+    justify-self: center
+
+  .description-news-2
+    grid-area: block1-description
+    width: 68%
+
+  .news-3
+    grid-area: block-video2
+    display: grid
+    grid-template-areas: 'block2-video' 'block2-description'
+
+  .news-video-3
+    grid-area: block2-video
+    justify-self: center
+
+  .description-news-3
+    grid-area: block2-description
+    width: 68%
+
+
+  /* Adaptive for Games page */
+  .body-games
+    grid-template-areas: 'heading-body' 'game1' 'game2' 'game3' 'game4' 'game5' 'game6' 'game7' 'pagination-pages'
+    grid-template-columns: 100%
+    grid-template-rows: 100px 320px 320px 320px 320px 320px 320px 320px 150px
+
+  .game1, .game2, .game3, .game4, .game5, .game6
+    justify-self: center
+
+  .numeral-pagination
+    justify-self: center
+    margin-right: 22%
+
+  #game7
+    height: 280px
+    width: 480px
+
+  .numeral, #game7
+    font-size: 2.5em
+
+  /* Adaptive2 for Description game page */
+  .fa-reply
+    font-size: 2.5em
+
+  .heading-description-game, .heading-video
+    font-size: 2em
+
+  .link-join-us
+    font-size: 1.5em
+    height: 40px
+    justify-self: end
+
+  .warcraft-1
+    height: 460px
+    justify-self: center
+
+  .warcraft-2, .warcraft-3, .warcraft-4
+    height: 150px
+
+  .link-go-to-the-tour
+    font-size: 1.5em
+    width: 230px
+
+  .heading-descriptions
+    grid-template-areas: 'arrow button-join' 'heaging-warcraft-game heaging-warcraft-game'
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 130px 70px
+
+  .body-description
+    grid-template-areas: 'picture-warcraft' 'description-warcraft'
+    grid-template-columns: 100%
+    grid-template-rows: 510px 400px
+
+  .description-game
+    grid-template-rows: 200px 950px 250px
+
+  .video-warcraft
+    grid-template-areas: 'heading-video-warcraft' 'video-warcraft-1' 'video-warcraft-2' 'video-warcraft-3' 'video-warcraft-4' 'button-go-tour'
+    grid-template-columns: 100%
+    grid-template-rows: 100px 350px 350px 350px 400px 150px
+
+
+  /* Adaptive2 for Contacts page */
+  .information-contacts
+    grid-template-areas: 'field-for-you' 'password-and-nick'
+    grid-template-columns: 100%
+
+  .contact-picture
+    display: none
+
+  .field-for-you
+    justify-self: center
+
+  .heading-first-name, .heading-second-name, .heading-phone, .heading-email
+    justify-self: center
+
+  .map
+    height: 90%
+
+  .contacts-body
+    grid-template-rows: 150px 1000px 350px
+
+
+  /* Adaptive for Blogs Page */
+  .img-blog1
+    width: 500px
+
+  .blog-body
+    grid-template-areas: 'heading-blogs-body' 'blog1' 'blog2' 'blog3' 'blog4' 'blog5' 'blog6' 'blog7' 'blog8' 'blog9' 'blog10' 'blog11' 'blog12' 'button-upload'
+    grid-template-columns: 95%
+    grid-template-rows: 150px repeat(11, 760px) 800px 150px
+
+  .common-blog
+    grid-template-rows: 480px 60px 140px
+    grid-template-columns: 80% 10% 10%
+
+  .button-upload-h2
+    font-size: 2em
+
+  .fa-sync
+    font-size: 2em
+
+
+  /* Adaptive for Description Blog Page */
+  .heading-heading-description-blog
+    font-size: 1.7em
+
+
+
+
+
+
+
+
+
+
+
