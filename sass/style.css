@@ -24,7 +24,7 @@ h3 {
 /* Style for Home page*/
 /* style for slide-1*/
 .slider-1 {
-  background-image: url(img/slide.jpg);
+  background-image: url(../img/slide.jpg);
   background-size: cover;
 }
 
@@ -179,7 +179,7 @@ h3 {
 
 /*Style for section slider-footer*/
 .slider_footer {
-  background-image: url(img/slider-footer.jpg);
+  background-image: url(../img/slider-footer.jpg);
   background-size: cover;
 }
 
